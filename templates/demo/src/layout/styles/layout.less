@@ -1,0 +1,42 @@
+@import url(../../common/styles/theme.less);
+
+.header-layout{
+	height:60px;
+	display: flex;
+	align-items:center;
+	background-color: @bgColor;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	.logo{
+		width: 210px;
+		font-size: 28px;
+		color:@mainColor;
+		text-align: center;
+	}
+	.menu{
+		flex-grow:1;
+		.menu-item{
+			padding-right: 20px;
+			padding-left: 20px;
+			display: inline-block;
+			text-align: center;
+			&.select{
+				a{
+					color: @mainColor;
+				}
+			}
+			a{
+				font-size: 16px;
+				color:#fff;
+			}
+		}
+	}
+}
+
+.silder-layout{
+	width: 100%;
+	height: 100%;
+	background-color: @bgColor;
+}
